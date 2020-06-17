@@ -10,9 +10,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
 
+import { ServiceModule } from './services/service.module';
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, AppRoutingModule, PagesModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    PagesModule,
+    FormsModule,
+    ServiceModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
